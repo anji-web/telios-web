@@ -1,0 +1,18 @@
+{
+    "LANG" : {
+        "title": "Welcome to the Telios telephony client",
+        "sub-title": "to continue please enter your extension number or agent ID",
+        "placeholder" : "Enter extension number",
+        "optionTitle" : "Choose languages",
+        "available" : "Available",
+        "connected-as" : "You are connected as",
+        "on-hold" : "On hold",
+        "mic-setting" : "Microphone settings",
+        "internal-set" : "Internal microphone",
+        "muted" : "Muted",
+        "speaker-setting" : "Speaker settings",
+        "call-history": "Call history",
+        "view-all" : "View all",
+        "internal-speaker": "Internal speaker"
+    }
+}

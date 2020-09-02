@@ -1,0 +1,18 @@
+{
+    "LANG" : {
+        "title": "Welkom bij de telefonieclient van Telios",
+        "sub-title": "Voer uw toestelnummer of agent-ID in om door te gaan",
+        "placeholder" : "Voer het toestelnummer in",
+        "optionTitle" : "Kies talen",
+        "available" : "Beschikbaar",
+        "connected-as" : "U bent verbonden als",
+        "on-hold" : "In de wacht",
+        "mic-setting" : "Microfoon instellingen",
+        "internal-set" : "Interne microfoon",
+        "muted" : "Gedempt",
+        "speaker-setting" : "Luidsprekerinstellingen",
+        "call-history": "Oproepgeschiedenis",
+        "view-all" : "Bekijk alles",
+        "internal-speaker": "Interne luidspreker"
+    }
+}

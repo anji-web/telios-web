@@ -1,0 +1,22 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+       <h1 class="title">TELECATS</h1>
+    </div>
+  
+      <!-- Login Form -->
+      <form *ngIf="!success" #formRegister="ngForm" (ngSubmit)="formRegister.form.valid && createAccount()">
+        <input type="text" id="username" class="fadeIn second" required name="username" [(ngModel)]="form.username" placeholder="Username">
+        <input type="text" id="email" class="fadeIn second" required name="email" [(ngModel)]="form.email"  placeholder="Email">
+        <input type="text" id="firstName" class="fadeIn second" required name="firstName" [(ngModel)]="form.firstName" placeholder="First name">
+        <input type="text" id="lastName" class="fadeIn second" required name="lastName" [(ngModel)]="form.lastName" placeholder="Last Name">
+        <input type="text" id="address" class="fadeIn second" required name="address"  [(ngModel)]="form.address" placeholder="Address">
+        <input type="password" id="password" class="fadeIn third" required name="password" [(ngModel)]="form.password" placeholder="password">
+        <input type="submit" class="fadeIn fourth" value="Create Account">
+      </form>
+  
+    </div>
+  </div>

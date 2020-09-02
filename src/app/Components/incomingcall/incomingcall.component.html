@@ -1,0 +1,190 @@
+<div class="connected_top">
+	<div class="main">
+		<div class="connected_top_cn">
+			<div class="available_option">
+				<div class="av_icon">
+					<img src="assets/images/ic_available.png" alt="">
+				</div>
+				<div class="av_text">Available</div>
+			</div>
+			<div class="connected_id">
+				<div class="con_id_tx">You are connected as :</div>
+				<div class="con_id_num"><span>#</span>1986543</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body trasbody">
+          <div class="trash_icon">
+          	<img src="assets/images/ic_trash_call.png" alt="">
+          </div>
+          <p>Are you sure you want to clear your call history?</p>
+          <div class="trash_btn_holder">
+          	  <button class="btn_clearp" routerLink="/callhistoryempty" routerLinkActive="active" data-dismiss="modal">Yes, clear it</button>
+          	  <button class="btn_cancel" data-dismiss="modal">Cancel</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="connected_body">
+	<div class="main">
+		<div class="call_connected_top">
+			<div class="cll_logo">
+				<img src="assets/images/Logo_Telecats_Logogram.png" alt="">
+			</div>
+			<div class="cll_right">
+				<div class="avail_drop">
+					<div class="dropdown">
+					  <div class="aval_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <div class="available_option">
+							<div class="av_icon">
+								<img src="assets/images/ic_available.png" alt="">
+							</div>
+							<div class="av_text">Available</div>
+							<div class="drop_icon"><img src="assets/images/ic_down.png" alt=""></div>
+						</div>
+					  </div>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="javascript:void(0);">
+					    	<div class="available_option">
+								<div class="av_icon">
+									<img src="assets/images/ic_onhold.png" alt="">
+								</div>
+								<div class="av_text onhold">On hold</div>
+							</div>
+					    </a>
+					  </div>
+					</div>
+				</div>
+				<div class="cll_setting"><a href="javascript:void(0);"><img src="assets/images/bt_settings_default.png" alt="">
+					<div class="setting_drop">
+							<div class="miscrphone">
+								<div class="micro_left">
+									<img src="assets/images/ic_mic.png" alt=""> Microphone settings
+								</div>
+								<div class="micro_right">
+									<img src="assets/images/micro_right.png" alt="">
+								</div>
+							</div>
+							<select>
+								<option>Internal microphone</option>
+							</select>
+							<div class="mute_btn_holder">
+								<div class="mute_btn"><img src="assets/images/bt_minus.png" alt=""></div>
+								<div class="mute_fld"><span>Muted</span></div>
+								<div class="mute_btn"><img src="assets/images/bt_plus.png" alt=""></div>
+							</div>
+							<div class="partition"></div>
+							<div class="miscrphone">
+								<div class="micro_left">
+									<img src="assets/images/ic_speaker.png" alt=""> Speaker settings
+								</div>
+								<div class="micro_right">
+									<img src="assets/images/mic_none.png" alt="">
+								</div>
+							</div>
+							<select>
+								<option>Internal speaker</option>
+							</select>
+							<div class="mute_btn_holder">
+								<div class="mute_btn"><img src="assets/images/bt_minus.png" alt=""></div>
+								<div class="mute_fld_2"><img src="assets/images/progress.png" alt=""></div>
+								<div class="mute_btn"><img src="assets/images/bt_plus.png" alt=""></div>
+							</div>
+						</div>
+				</a></div>
+				<div class="cll_logout"><a href="javascript:void(0);"><img src="assets/images/bt_logout_default.png" alt=""></a></div>
+			</div>
+		</div>
+		<div class="history_mid_cn">
+			<div class="his_tp_left">
+				<a routerLink="/connected" routerLinkActive="active"><img src="assets/images/ic_back.png" alt=""> Call history</a>
+			</div>
+			<div class="his_tp_right">
+				<div class="date_filter">
+					<div class="filtter_label"><label>Date filter :</label></div>
+					<div class="filter_field">
+						<mat-form-field appearance="fill">
+						  <mat-label>Select date</mat-label>
+						  <mat-date-range-input [rangePicker]="picker">
+						    <input matStartDate placeholder="Start date">
+						    <input matEndDate placeholder="End date">
+						  </mat-date-range-input>
+						  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+						  <mat-date-range-picker #picker></mat-date-range-picker>
+						</mat-form-field>
+					</div>
+				</div>
+				<div class="clear_history">
+					<button type="button" class="btn_clear" data-toggle="modal" data-target="#exampleModal">Clear history</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5">
+				<div class="call_tab">
+					<ul>
+						<li><a routerLink="/callhistory" routerLinkActive="active">All history <span class="badge">32</span></a></li>
+						<li  class="current"><a routerLink="/incomingcall" routerLinkActive="active">Incoming calls <span class="badge">11</span></a></li>
+						<li><a href="javascript:void(0);">Outgoing calls <span class="badge">4</span></a></li>
+						<li class="reject_red"><a href="javascript:void(0);">Rejected calls <span class="badge">22</span></a></li>
+						<li class="reject_red"><a href="javascript:void(0);">Missed calls <span class="badge">20</span></a></li> 
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-7">
+				<div class="call_holder">
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

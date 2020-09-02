@@ -1,0 +1,30 @@
+<div class="connect_top">
+	<div class="main">
+		<div class="logo">
+			<img src="../assets/images/logo.png" alt="">
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="connect_main_body">
+		<p>{{'LANG.title'| translate}},<br> {{'LANG.sub-title'| translate}}.</p>
+		<div class="connect_form_holder">
+			<input type="text" ng-model="Enter-extension-number" placeholder="{{'LANG.placeholder' | translate}}">
+			<input type="submit" name="" value="Connect" [routerLink]="['/connected']" routerLinkActive="router-link-active">
+		</div>
+	</div>
+</div>
+<div class="main">
+
+	<select class="form-control mt-5" #locale (change)="changeLang(locale.value)">
+		<option value="en">Choose Languages</option>
+		<option value="en">English</option> 
+		<option value="nl">Dutch</option> 
+		<option value="es">spanish</option> 
+	</select>
+</div>
+<div class="main">
+	<footer class="footer">
+		<p> Copyright 2020 © Telecats BV. All rights reserved.</p>
+	</footer>
+</div>

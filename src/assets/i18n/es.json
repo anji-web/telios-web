@@ -1,0 +1,18 @@
+{
+    "LANG" : {
+        "title": "Bienvenido al cliente de telefonía de Telios",
+        "sub-title": "para continuar, ingrese su número de extensión o ID de agente",
+        "placeholder" : "Ingrese el número de extensión",
+        "optionTitle" : "Elige idiomas",
+        "available" : "Disponible",
+        "connected-as" : "Estas conectado como",
+        "on-hold" : "En espera",
+        "mic-setting" : "Configuración de micrófono",
+        "internal-set" : "Micrófono interno",
+        "muted" : "Apagada",
+        "speaker-setting" : "Configuración de los altavoces",
+        "call-history": "Historial de llamadas",
+        "view-all" : "Ver todo",
+        "internal-speaker": "Orador interno"
+    }
+}

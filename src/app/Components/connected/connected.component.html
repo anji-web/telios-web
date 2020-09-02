@@ -1,0 +1,170 @@
+<div class="connected_top">
+	<div class="main">
+		<div class="connected_top_cn">
+			<div class="available_option">
+				<div class="av_icon">
+					<img src="assets/images/ic_available.png" alt="">
+				</div>
+				<div class="av_text"> {{'LANG.available' | translate}} </div>
+			</div>
+			<div class="connected_id">
+				<div class="con_id_tx"> {{'LANG.connected-as' | translate}} </div>
+				<div class="con_id_num" *ngFor="let userList of user"><span>#</span>{{userList.email}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="connected_body">
+	<div class="main">
+		<div class="call_connected_top">
+			<div class="cll_logo">
+				<img src="assets/images/Logo_Telecats_Logogram.png" alt="">
+			</div>
+			<div class="cll_right">
+				<div class="avail_drop">
+					<div class="dropdown">
+					  <div class="aval_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <div class="available_option">
+							<div class="av_icon">
+								<img src="assets/images/ic_available.png" alt="">
+							</div>
+							<div class="av_text"> {{'LANG.available' | translate}} </div>
+							<div class="drop_icon"><img src="assets/images/ic_down.png" alt=""></div>
+						</div>
+					  </div>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="javascript:void(0);">
+					    	<div class="available_option">
+								<div class="av_icon">
+									<img src="assets/images/ic_onhold.png" alt="">
+								</div>
+								<div class="av_text onhold">{{'LANG.on-hold' | translate}}</div>
+							</div>
+					    </a>
+					  </div>
+					</div>
+				</div>
+				<div class="cll_setting"><a href="javascript:void(0);">
+					<img src="assets/images/bt_settings_default.png" alt="">
+					<div class="setting_drop">
+							<div class="miscrphone">
+								<div class="micro_left">
+									<img src="assets/images/ic_mic.png" alt=""> {{'LANG.mic-setting' | translate}}
+								</div>
+								<div class="micro_right">
+									<img src="assets/images/micro_right.png" alt="">
+								</div>
+							</div>
+							<select>
+								<option>{{'LANG.internal-set' | translate}}</option>
+							</select>
+							<div class="mute_btn_holder">
+								<div class="mute_btn"><img src="assets/images/bt_minus.png" alt=""></div>
+								<div class="mute_fld"><span>{{'LANG.muted' | translate}}</span></div>
+								<div class="mute_btn"><img src="assets/images/bt_plus.png" alt=""></div>
+							</div>
+							<div class="partition"></div>
+							<div class="miscrphone">
+								<div class="micro_left">
+									<img src="assets/images/ic_speaker.png" alt=""> {{'LANG.speaker-setting' | translate}}
+								</div>
+								<div class="micro_right">
+									<img src="assets/images/mic_none.png" alt="">
+								</div>
+							</div>
+							<select>
+								<option>{{'LANG.internal-speaker' | translate}}</option>
+							</select>
+							<div class="mute_btn_holder">
+								<div class="mute_btn"><img src="assets/images/bt_minus.png" alt=""></div>
+								<div class="mute_fld_2"><img src="assets/images/progress.png" alt=""></div>
+								<div class="mute_btn"><img src="assets/images/bt_plus.png" alt=""></div>
+							</div>
+						</div>
+				</a>
+				</div>
+				<div class="cll_logout"><a href="javascript:void(0);"><img src="assets/images/bt_logout_default.png" alt=""></a></div>
+			</div>
+		</div>
+		
+		<div class="row_custom">
+			<div class="col_dial">
+				<div class="dilpad">
+					<div class="dial_display">
+						<input type="text" name="">
+					</div>
+					<div class="dial_keyboard">
+						<div class="dial_key"><button>1 <span>&nbsp;</span></button></div>
+						<div class="dial_key"><button>2 <span>ABC</span></button></div>
+						<div class="dial_key"><button>3 <span>DEF</span></button></div>
+						<div class="dial_key"><button>4 <span>GHI</span></button></div>
+						<div class="dial_key"><button>5 <span>JKL</span></button></div>
+						<div class="dial_key"><button>6 <span>MNO</span></button></div>
+						<div class="dial_key"><button>7 <span>PQRS</span></button></div>
+						<div class="dial_key"><button>8 <span>TUV</span></button></div>
+						<div class="dial_key"><button>9 <span>WXYZ</span></button></div>
+						<div class="dial_key"><button>* </button></div>
+						<div class="dial_key"><button>0</button></div>
+						<div class="dial_key"><button>#</button></div>
+					</div>
+				</div>
+				<div class="call_button">
+					<a href="javascript:void(0);"><img src="assets/images/bt_call_big.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col_his">
+				<div class="call_history_top">
+					<div class="call_view_all">{{'LANG.call-history' | translate}}</div>
+					<div class="call_view_all_btn"><a routerLink="/callhistory" routerLinkActive="active">{{'LANG.view-all' | translate}}</a></div>
+				</div>
+				<div class="call_holder">
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_call_missed.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+					<div class="call_repeter">
+						<div class="call_icon"><img src="assets/images/ic_callout.png" alt=""></div>
+						<div class="call_num">
+							0616153003
+							<span>00:11:22</span>
+						</div>
+						<div class="call_time">09:00 AM</div>
+						<div class="call_icon"><a href="javascript:void(0);"><img src="assets/images/bt_call.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
